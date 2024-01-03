@@ -3,9 +3,9 @@ The file __NavierStokes.py__ contains the class defintion to hold mesh informati
 __omg2vel__ function calculates variables $u, v, \omega, \psi$ from $\hat{\omega}$ using the following equations:
 
 ``` math 
-\nabla^2\psi = \omega \implies \hat{\psi} = \frac{\omega}{k_x^2+k_y^2} \\
+\displaylines{\nabla^2\psi = \omega \implies \hat{\psi} = \frac{\omega}{k_x^2+k_y^2} \\
 u = \frac{\partial \psi}{\partial y} \implies \hat{u} = ik_y\hat{\psi} \\
-v = -\frac{\partial \psi}{\partial x} \implies \hat{v} = -ik_x\hat{\psi}
+v = -\frac{\partial \psi}{\partial x} \implies \hat{v} = -ik_x\hat{\psi}}
 ```
 
 __convection__ function calculates the advection term in the vorticity equation: 
